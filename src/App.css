@@ -1,0 +1,19 @@
+.slide{
+  position: relative;
+  left: -300px;
+  transition: all .7s;
+}
+
+
+h1{
+  position: relative;
+  transition: all .7s;
+}
+
+.not-show{
+  left: -300px;
+}
+
+.show{
+  left: 50px;
+}
