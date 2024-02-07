@@ -5,7 +5,7 @@ const Input = () => {
     <>
     <div className="inputHold">
       <input placeholder='Search' type="text"/>
-      <div><CiSearch /></div>
+      <div><CiSearch size='30px'/></div>
     </div>
     </>
   )

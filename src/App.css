@@ -1,19 +1,94 @@
-.slide{
-  position: relative;
-  left: -300px;
-  transition: all .7s;
+
+
+.subheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.sub-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    gap: 30px;
+}
+
+.category {
+    display: flex;
+    
+}
+
+.nav-hold {
+    display: flex;
+    gap: 25px;
 }
 
 
-h1{
-  position: relative;
-  transition: all .7s;
+
+
+.line {
+    height: 40px;
+    width: 1px;
+    background-color:#ECECEC;
 }
 
-.not-show{
-  left: -300px;
+.LD {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    cursor:'pointer';
 }
 
-.show{
-  left: 50px;
+.LD span{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+    font-weight: 500;
 }
+
+.LD:hover{
+    color: #0BAF9A;
+}
+
+.goat {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    position: absolute;
+    background-color: white;
+    transition: all .3s ease-in-out;
+    border: 1px solid #ECECEC;
+    border-radius: 10px;
+}
+
+.change {
+    visibility: visible;
+}
+
+.not-change {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navi {
+    cursor: pointer;
+}
+
+.navi:hover {
+    color: #0BAF9A;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+

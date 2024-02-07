@@ -1,0 +1,33 @@
+
+.holder{
+    margin-bottom: 5px;
+}
+.cart-wrap {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    margin-bottom: 10px;
+}
+
+.cart-img {
+    width: 87px;
+    height: 70px;
+    background-color: gold;
+    border-radius: 5px;
+}
+
+.cart-hold {
+    margin-left: 10px;
+}
+
+.cart-hold h1 {
+    color: #0BAF9A;
+    font-size: 18px;
+    margin: 0px;
+}
+
+/* .qty-price {
+    display: flex;
+    gap: 5px;
+} */
