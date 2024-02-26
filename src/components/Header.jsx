@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Link,NavLink } from "react-router-dom"
+import styled from "@emotion/styled"
 const Header = ({prop}) => {
 
     const contianer = {
@@ -9,15 +10,24 @@ const Header = ({prop}) => {
         height: '70px'
     }
   return (
-      <div style={ contianer }>
-          <Link to='/'><div>Page1</div></Link>
-          <Link to='/page2'><div>Page2</div></Link>
-          <Link to='/page3'><div>Page3</div></Link>
-          <Link to='/page4'><div>Page4</div></Link>
-          <Link to='/page5'><div>Page5</div></Link>
+      <Container style={ contianer }>
+          <Nav to='/'>Page1</Nav>
+          <Nav to='/page2'>Page2</Nav>
+          <Nav to='/page3'>Page3</Nav>
+          <Nav to='/page4'>Page4</Nav>
+          <Nav to='/page5'>Page5</Nav>
           <div>{prop}</div>
-    </div>
+    </Container>
   )
 }
 
-export default Header
+export default Header;
+
+const Nav = styled(NavLink)`
+  text-decoration: none;
+  color: white;
+  transition: all .3s;
+`
+const Container = styled.div`
+`
+

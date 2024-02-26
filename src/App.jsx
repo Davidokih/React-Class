@@ -16,7 +16,7 @@ const greeting = "hello"
       <BrowserRouter>
         <Header prop={ greeting} />
          {/* <Hero /> */}
-        <Slider />
+        {/* <Slider /> */}
         <Routes>
        
           <Route path='/' element={ <Page1 />} />
