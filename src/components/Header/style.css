@@ -4,7 +4,7 @@
     justify-content: center;
     /* width: 100%; */
     height: 70px;
-    padding: 0px 10px;
+    padding: 0px 60px;
     background-color: white;
     color: black;
     border-bottom: 1px solid #ECECEC;
@@ -16,12 +16,11 @@
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 100px;
+    /* justify-content: space-between; */
+    /* margin-left: 100px; */
     gap: 20px;
+    /* background-color: gold; */
 }
-
-
 
 .logo {
     width: 140px;
@@ -47,7 +46,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 100px;
+    /* margin-right: 100px; */
+    /* background-color: blue; */
 }
 
 .LD {
@@ -167,4 +167,88 @@ input::placeholder {
 .hoverClass:hover{
     background-color: #0baf9a;
     color: white;
+}
+
+
+.menu{
+    display: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+.search{
+    display: none;
+}
+
+.slider-hold{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(65, 65, 68, 0.723);
+    top: 0px;
+    /* transition: 1ms; */
+}
+
+.not-show{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.show{
+    visibility: visible;
+    transform: translateX(1px);
+}
+
+.slider .not-show{
+    transition: all .3s ease-in-out;
+}
+
+.slider{
+    background-color: white;
+    width: 250px;
+    height: 100%;
+    /* transform: translateX(-300px); */
+    transition: all .3s ease-in-out;
+}
+
+.menu-head {
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.nav-hold{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: lightgray; */
+    /* height: 50px; */
+    padding: 10px 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.cancel{
+    cursor: pointer;
+}
+
+@media (max-width: 1000px){
+    .input-hold{
+        display: none;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    .LD{
+        display: none;
+    }
+    .search{
+        display: block;
+    }
+    .slider-hold{
+        display: block;
+    }
 }

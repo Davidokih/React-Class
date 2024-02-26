@@ -1,7 +1,7 @@
-import react from 'react'
 import { LiaExchangeAltSolid } from "react-icons/lia";
 import { PiHandbagLight } from "react-icons/pi";
 import { BsHeart } from "react-icons/bs";
+import { CiSearch } from "react-icons/ci";
 
 const Icons = ({display}) => {
 // console.log('this is props',props)
@@ -11,6 +11,7 @@ const Icons = ({display}) => {
              {display === 'A' && <LiaExchangeAltSolid />}
              {display === 'C' && <BsHeart />}
              {display === 'B' && <PiHandbagLight />}
+             {display === 'D' && <CiSearch />}
             </div> 
 
             
