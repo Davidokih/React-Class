@@ -15,8 +15,8 @@
 .slider-contianer{
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: flex-start; */
     transition: transform 0.5s ease;
     list-style: none;
     /* transform: translateX(0rem); */

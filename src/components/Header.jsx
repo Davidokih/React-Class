@@ -1,6 +1,6 @@
-import { Link,NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import styled from "@emotion/styled"
-const Header = ({prop}) => {
+const Header = () => {
 
     const contianer = {
         backgroundColor: 'gold',
@@ -16,7 +16,6 @@ const Header = ({prop}) => {
           <Nav to='/page3'>Page3</Nav>
           <Nav to='/page4'>Page4</Nav>
           <Nav to='/page5'>Page5</Nav>
-          <div>{prop}</div>
     </Container>
   )
 }
@@ -27,6 +26,10 @@ const Nav = styled(NavLink)`
   text-decoration: none;
   color: white;
   transition: all .3s;
+
+  &.active{
+    color: black;
+  }
 `
 const Container = styled.div`
 `

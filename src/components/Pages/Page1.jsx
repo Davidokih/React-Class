@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import { AppState } from "../GlobalSate"
 import styled from '@emotion/styled'
 import axios from "axios";
-
+import { NavLink } from "react-router-dom";
 const Page1 = () => {
 
   const { count, setCount } = useContext(AppState)
@@ -28,7 +28,7 @@ const Page1 = () => {
 
       { data?.map((props) => (
         <div key={ props.id }>
-          <div>{ props.title }</div>
+          <NavLink to={`/page4/${props.id}`}><div>{ props.title }</div></NavLink>
           <Image src={ props.image} />
         </div>
       ))}

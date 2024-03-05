@@ -66,7 +66,7 @@ const Slider = () => {
               <button onClick={handleNext}>Next</button>
           <div className='slider-cont'>
               <ul ref={ containerRef } className='slider-contianer'
-                  style={ { width: `${data.length * 100}%`, transform: `translate(${currentIndex})` } }
+                //   style={ { width: `${data.length * 100}%`, transform: `translate(0rem)` } }
               >
           { data?.map((props) => (
               <li ref={ slideRef } className={ `slider-card` } key={ props?.id }

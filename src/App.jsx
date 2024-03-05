@@ -22,7 +22,7 @@ const greeting = "hello"
           <Route path='/' element={ <Page1 />} />
           <Route path='/page2' element={ <Page2 />} />
           <Route path='/page3' element={ <Page3 />} />
-          <Route path='/page4' element={ <Page4 />} />
+          <Route path='/page4/:id' element={ <Page4 />} />
           <Route path='/page5' element={ <Page5 />} />
         </Routes>
       </BrowserRouter>
