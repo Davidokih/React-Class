@@ -6,7 +6,16 @@ import { NavLink } from "react-router-dom";
 const Page1 = () => {
 
   const { count, setCount } = useContext(AppState)
-  const [data, setData] = useState()
+  const [ data, setData ] = useState()
+  
+  // const data = [
+  //   {
+  //     id:1,
+  //     title: 'anything',
+  //     category: 'men',
+  //     image: 'sdfgvhbjn'
+  //   }
+  // ]
 
   const getProduct = async () => {
     await axios.get('https://fakestoreapi.com/products').then((res) => {
@@ -18,8 +27,15 @@ const Page1 = () => {
   }
   useEffect(() => {
     getProduct()
-    console.log('hello');
-  },[])
+  }, [])
+  
+  const deleteProduct = async (id) => {
+    await axios.delete(`https://fakestoreapi.com/products/${id}`).then((res) => {
+      console.log(res)
+    }).catch((error) => {
+      console.log(error)
+    })
+  }
 
   return (
       <Container>
@@ -29,7 +45,9 @@ const Page1 = () => {
       { data?.map((props) => (
         <div key={ props.id }>
           <NavLink to={`/page4/${props.id}`}><div>{ props.title }</div></NavLink>
-          <Image src={ props.image} />
+          <Image src={ props.image } />
+          <NavLink to={ `/page3/${props.id}` }><div> Edit</div></NavLink>
+          <button onClick={()=> deleteProduct(props.id)}>Delete</button>
         </div>
       ))}
     </Container>
