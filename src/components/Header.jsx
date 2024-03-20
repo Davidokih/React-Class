@@ -16,6 +16,8 @@ const Header = () => {
           <Nav to='/page3'>Page3</Nav>
           <Nav to='/page4'>Page4</Nav>
           <Nav to='/page5'>Page5</Nav>
+          <Nav to='/cart'>Cart</Nav>
+          <Nav to='/product'>Prodcut</Nav>
     </Container>
   )
 }
@@ -32,5 +34,9 @@ const Nav = styled(NavLink)`
   }
 `
 const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
 `
 

@@ -7,7 +7,10 @@ import Page3 from './components/Pages/Page3';
 import Page4 from './components/Pages/Page4';
 import Page5 from './components/Pages/Page5';
 import Header from './components/Header';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Page from './RecatRedux/Page';
+import Cart from './components/Pages/Cart';
+import ProductPage from './components/Pages/ProductPage';
 
 const App = () => {
 const greeting = "hello"
@@ -16,7 +19,8 @@ const greeting = "hello"
       <BrowserRouter>
         <Header prop={ greeting} />
          {/* <Hero /> */}
-        {/* <Slider /> */}
+        {/* <Slider /> */ }
+        {/* <Page /> */}
         <Routes>
        
           <Route path='/' element={ <Page1 />} />
@@ -24,6 +28,8 @@ const greeting = "hello"
           <Route path='/page3/:id' element={ <Page3 />} />
           <Route path='/page4/:id' element={ <Page4 />} />
           <Route path='/page5' element={ <Page5 />} />
+          <Route path='/cart' element={ <Cart />} />
+          <Route path='/product' element={ <ProductPage />} />
         </Routes>
       </BrowserRouter>
     </div>
